@@ -28,7 +28,7 @@ echo "=============================================================="
 echo "            AiVA-96 Mycroft Platfrom Installation"
 echo "=============================================================="
 if [ ! -d mycroft-core ]; then
-    git clone -b dev https://github.com/MycroftAI/mycroft-core.git
+    git clone -b master https://github.com/MycroftAI/mycroft-core.git
 fi
 
 cd mycroft-core
