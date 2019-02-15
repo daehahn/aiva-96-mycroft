@@ -6,7 +6,7 @@
 create_swapfile()
 {
   SWAPSIZE=`free | awk '/Swap/ { printf "%d", $2/1024 }'`
-  while [[ "$SWAPSIZE" -lt "512" ]]; do
+  while [[ "$SWAPSIZE" -lt "511" ]]; do
     echo "=============================================================="
     echo "Create a temporary SWAP file. It will disappear when reboot."
     echo "** Please consier to add a performanant SWAP file/parition. **"
